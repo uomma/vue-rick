@@ -1,6 +1,8 @@
 @use './_partials/reset';
 @use './_partials/variables';
 
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
 
 body {
     background-color: lightgreen;
