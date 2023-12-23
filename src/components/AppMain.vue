@@ -1,16 +1,17 @@
 <script>
-    export default {
-        
-    }
+import AppSearch from './AppSearch.vue';
+export default {
+   name:'AppMain',
+   components:{
+    AppSearch
+   }
+}
 </script>
 <template>
-    <div>
-main
-    </div>
+    <AppSearch> </AppSearch>
+  
 </template>
 
 
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
