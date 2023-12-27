@@ -1,12 +1,18 @@
 <script>
+import { store } from '../store';
+
     export default {
-        
+        data(){
+            return{
+                store
+            }
+        }
     }
 </script>
 <template>
-    <div>
-piede
-    </div>
+<footer class="text-center my-5">
+    risultati trovati : {{ store.charactersFound }}
+</footer>
 </template>
 
 
