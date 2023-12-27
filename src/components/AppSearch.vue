@@ -19,8 +19,8 @@ export default {
                 </div>
                 <div class="col-12 col-sm-auto">
                     <label for="search" class="form-label d-none">select status</label>
-                    <select class="form-select" id="search">
-                        <option selected>Select Status</option>
+                    <select class="form-select" id="search" v-model="store.searchStatus">
+                        <option selected value="">Select Status</option>
                         <option value="Alive">Alive</option>
                         <option value="Dead">Dead</option>
                         <option value="Unknow">Unknow</option>
