@@ -1,17 +1,22 @@
 <script>
 import { store } from '../store';
 export default {
-    name: 'AppSearch', 
-    data(){
-        return{
+    name: 'AppSearch',
+    data() {
+        return {
             store
         }
+    },
+    methods: {
+       /*  testSubmit() {
+            console.log(this.store.searchKey)
+        } */
     }
 }
 </script>
 <template>
     <div class="container">
-        <form>
+        <form @submit.prevent="$emit('search')">
             <div class="row justify-content-center g-1">
                 <div class="mb-3 col-12 col-sm-auto ">
                     <label for="search" class="form-label d-none">search</label>
@@ -25,14 +30,14 @@ export default {
                         <option value="Dead">Dead</option>
                         <option value="Unknow">Unknow</option>
                     </select>
-                    
+
                 </div>
-                <form>
-                        <div class="mb-3 col-12 col-sm-auto">
-                            <button type="submit" class="btn btn-primary me -1">Submit</button>
-                            <button type="reset" class="btn btn-secondary">Reset</button>
-                        </div>
-                    </form>
+                
+                    <div class="mb-3 col-12 col-sm-auto">
+                        <button type="submit" class="btn btn-primary me -1">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                
             </div>
 
 

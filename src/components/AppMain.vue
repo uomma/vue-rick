@@ -6,11 +6,18 @@ export default {
    components:{
     AppSearch,
     AppList
+   },
+   methods:{
+    handleSearch(){
+        console.log('ho csca');
+        this.$emit('algo')
+      
+    }
    }
 }
 </script>
 <template>
-    <AppSearch> </AppSearch>
+    <AppSearch @search="handleSearch"/>
     <AppList></AppList>
   
 </template>
